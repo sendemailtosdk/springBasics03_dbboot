@@ -1,0 +1,43 @@
+insert into Vendor(id,company_name,first_name,last_name,website,email,status,gst_no)
+valueS('4698552551','Genal Datatech','Srinivas','Vasamsetti','www.gdt.com','srinivas.vasamsetti.gdt.com','Active','GSTX723SD')
+
+{
+"id": 1,
+"companyName": "Genal Datatech",
+"firstName": "Srikanth",
+"lastName": "Ramanathan",
+"website": "www.gdt.com",
+"email": "Srikanth.Ramanathan@gdt.com",
+"status": "Active",
+"gstNo": "GSTX717273"
+},
+{
+"id": 2,
+"companyName": "SAP",
+"firstName": "Srinivas",
+"lastName": "Vasamsetti",
+"website": "www.gdt.com",
+"email": "srinivas.vasamsetti@sap.com",
+"status": "Active",
+"gstNo": "GSTX723174"
+},
+{
+"id": 3,
+"companyName": "SAP",
+"firstName": "Jaime",
+"lastName": "flores",
+"website": "www.gdt.com",
+"email": "Jaime.flores@sap.com",
+"status": "Active",
+"gstNo": "GSTX742345"
+},
+{
+"id": 4,
+"companyName": "Genal Datatech",
+"firstName": "Prabhakar",
+"lastName": "Ranganathan",
+"website": "www.gdt.com",
+"email": "Prabhakar.Ranganathan@gdt.com",
+"status": "Active",
+"gstNo": "GSTX1230987"
+}
