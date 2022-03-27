@@ -24,7 +24,7 @@ public class VendorController {
 	vendorDataService vds;
 
 	@RequestMapping("/vendor/{vendorCode}")
-	public Vendor getVendorByCode(@PathVariable("vendorCode") Long code) {
+	public Vendor getVendorByCode(@PathVariable("vendorCode") String code) {
         Optional<Vendor> searchResult = vds.getSingleVendorByID(code);
         if(!searchResult.isPresent()) {
         

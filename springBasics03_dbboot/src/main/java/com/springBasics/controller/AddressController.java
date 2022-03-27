@@ -26,7 +26,7 @@ return ads.readAllAddress();
 }
 
 @RequestMapping("/address/{addressID}")
-public Address getAddressByID(@PathVariable("addressID") Long id){
+public Address getAddressByID(@PathVariable("addressID") String id){
 	
 return ads.getAddressByID(id);	
 }

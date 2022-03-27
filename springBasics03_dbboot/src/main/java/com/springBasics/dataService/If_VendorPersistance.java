@@ -11,7 +11,7 @@ import com.springBasics.entities.Vendor;
 
 
 
-public interface If_VendorPersistance extends JpaRepository<Vendor, Long>{
+public interface If_VendorPersistance extends JpaRepository<Vendor, String>{
    
 public List<Vendor> findByCompanyName(String companyName);
    

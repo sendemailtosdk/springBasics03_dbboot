@@ -20,7 +20,7 @@ public class addressDataService {
 		
 	}
 	
-	public Address getAddressByID(Long id) {
+	public Address getAddressByID(String id) {
 		Optional<Address> myaddress = adr.findById(id);
 		if(!myaddress.isPresent()) {			
 			return new Address( );

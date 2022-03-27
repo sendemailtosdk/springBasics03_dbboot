@@ -21,7 +21,7 @@ public If_VendorPersistance vp;
 		
 	}
 	
-	public Optional<Vendor> getSingleVendorByID(Long code) {
+	public Optional<Vendor> getSingleVendorByID(String code) {
 
 	return vp.findById(code);
 
