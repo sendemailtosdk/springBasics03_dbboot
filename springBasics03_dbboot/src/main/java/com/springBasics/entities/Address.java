@@ -2,13 +2,17 @@ package com.springBasics.entities;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 @Table(name="ADDRESS")
 public class Address {
 @Id
-@GeneratedValue(strategy = GenerationType.AUTO)
+//@GeneratedValue(strategy = GenerationType.AUTO)
+@GeneratedValue(generator = "uuid2")
+@GenericGenerator(name = "uuid2",strategy = "org.hibernate.id.UUIDGenerator")
 @Column(nullable = false,name = "ID")
-private Long addressId;
+private String addressId;
 @Column(name = "TYPE")
 private String addressType;
 @Column(name = "STREET")
@@ -27,7 +31,7 @@ public Address( ) {
 	
 }
 
-public Address(Long addressId, String addressType, String street, String city, String region, String country) {
+public Address(String addressId, String addressType, String street, String city, String region, String country) {
 	super();
 	this.addressId = addressId;
 	this.addressType = addressType;
@@ -36,10 +40,10 @@ public Address(Long addressId, String addressType, String street, String city, S
 	this.region = region;
 	this.country = country;
 }
-public Long getAddressId() {
+public String getAddressId() {
 	return addressId;
 }
-public void setAddressId(Long addressId) {
+public void setAddressId(String addressId) {
 	this.addressId = addressId;
 }
 public String getAddressType() {
